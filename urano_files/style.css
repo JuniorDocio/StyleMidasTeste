@@ -1,0 +1,306 @@
+#chatMidas {
+    border: 2px solid #dee2e6;
+    border-radius: .3rem;
+    bottom: 20px;
+    display: none;
+    margin-bottom: 20px;
+    font-family: sans-serif;
+    position: fixed;
+    /*right: 20px;*/
+    right: 85px;
+    width: 20%;
+    z-index: 2001;
+}
+
+#chatMidas .container-chat {
+    background-color: white;
+    padding: 0;
+    width: 100%;
+}
+
+@media screen and (max-width: 1199.98px) {
+    #chatMidas {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 1199.98px) {
+    #chatMidas .container-chat {
+        width: 100%;
+    }
+}
+
+#chamaChat {
+    cursor: pointer;
+    font-family: sans-serif;
+    /*background-color: gray;*/
+    background-color: #4daf61;
+    right: 30px;
+    z-index: 1001;
+    bottom: -85px;
+    position: fixed;
+    border-bottom: 0;
+    font-weight: bold;
+    transition-duration: 0.5s;
+    transition-property: bottom;
+    transition-timing-function: ease-out;
+}
+
+
+/* cancelada a movimentação do icone */
+
+
+/* #chamaChat:hover {
+    bottom: -5px;
+} */
+
+#chamaChat span {
+    color: #ffffff;
+    display: block;
+    padding: 20px 20px 15px;
+    text-align: center;
+}
+
+#chamaChat svg {
+    color: white;
+    fill: #ffffff;
+    margin: 15px auto 10px;
+}
+
+#chatMidas .guarda-chat {
+    background-color: white;
+    color: #212529;
+    display: none;
+    /*font-size: 1rem;*/
+    /*font-size: 1.25rem;*/
+    font-weight: 400;
+    line-height: 1.5;
+    padding: 0;
+}
+
+#chatMidas .header-chat {
+    align-items: center;
+    background: rgb(240, 242, 247);
+    border-bottom: 1px solid #ccc;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#chatMidas .header-chat section:first-child {
+    background-color: rgb(240, 242, 247);
+}
+
+#chatMidas .body-chat {
+    height: 50vh;
+    padding: 15px;
+    overflow-y: auto;
+}
+
+#chatMidas .guarda-input-chat {}
+
+#chatMidas #fecha-chat {
+    color: #212529;
+    cursor: pointer;
+}
+
+#chatMidas #envia-chat {
+    color: #212529;
+    cursor: pointer;
+    margin: 5px;
+    /*font-size: .8rem;*/
+    font-size: 13px;
+}
+
+#chatMidas .chat-header-pt1 {
+    display: flex;
+    justify-content: space-around;
+    padding: 0;
+}
+
+#chatMidas .atendente {
+    background-color: rgb(240, 242, 247) !important;
+}
+
+#chatMidas .atendente img {
+    border-radius: 50%;
+}
+
+#chatMidas .titulo-chat {
+    padding-left: 10px;
+}
+
+#chatMidas .titulo-chat h5 {
+    /*font-size: 1.15rem;*/
+    color: #212529;
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+#chatMidas .titulo-chat span {
+    color: #212529;
+}
+
+#chatMidas .titulo-chat span {
+    font-size: 14px;
+}
+
+#chatMidas .chat-header-pt2 {}
+
+#chatMidas .balao-conversa {
+    background: rgb(240, 242, 247);
+    color: #7e8086;
+    display: table;
+    font-size: 14px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    padding: 5px;
+    min-width: 18%;
+    width: auto;
+}
+
+#chatMidas .text-right {
+    text-align: right !important;
+}
+
+#chatMidas .flex-column {
+    -ms-flex-direction: column !important;
+    flex-direction: column !important;
+}
+
+#chatMidas .d-flex {
+    display: -ms-flexbox !important;
+    display: flex !important;
+}
+
+#chatMidas .p-3 {
+    padding: 1rem !important;
+}
+
+#chatMidas .align-items-center {
+    -ms-flex-align: center !important;
+    align-items: center !important;
+}
+
+#chatMidas .align-self-start {
+    -ms-flex-item-align: start !important;
+    align-self: flex-start !important;
+}
+
+#chatMidas .align-self-end {
+    -ms-flex-item-align: end !important;
+    align-self: flex-end !important;
+}
+
+#chatMidas .justify-content-center {
+    -ms-flex-pack: center !important;
+    justify-content: center !important;
+}
+
+#chatMidas .text-center {
+    text-align: center !important;
+}
+
+#chatMidas .border {
+    border: 1px solid #dee2e6 !important;
+}
+
+#chatMidas .rounded-lg {
+    border-radius: .3rem !important;
+}
+
+#chatMidas .form-control {
+    display: block;
+    width: 100%;
+    height: calc(1.5em + .75rem + 2px);
+    padding: .375rem .75rem;
+    /*font-size: 1rem;*/
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: .25rem;
+    transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+}
+
+
+/*Loading*/
+
+#chatMidas .loading {
+    font-size: 30px;
+}
+
+#chatMidas .loading:after {
+    overflow: hidden;
+    display: inline-block;
+    vertical-align: bottom;
+    -webkit-animation: ellipsis steps(4, end) 900ms infinite;
+    animation: ellipsis steps(4, end) 900ms infinite;
+    content: "\2026";
+    /* ascii code for the ellipsis character */
+    width: 0px;
+}
+
+@keyframes ellipsis {
+    to {
+        width: 1.25em;
+    }
+}
+
+@-webkit-keyframes ellipsis {
+    to {
+        width: 1.25em;
+    }
+}
+
+
+/*Fim do loading*/
+
+
+/* detecta o tamanho da pagina e exibe no lado esquerdo */
+
+
+/* @media screen and (max-width: 625px) { */
+
+
+/* #chamaChat {
+    position: fixed;
+    float: left;
+    background: transparent;
+    bottom: 80px;
+    left: -60%;
+    transform: scale(1.5);
+} */
+
+
+/* } */
+
+
+/* detecta o tamanho da pagina e exibe no lado Direito acima do icone de chat */
+
+@media screen and (max-width: 625px) {
+    #chamaChat {
+        position: fixed;
+        float: right;
+        background: transparent;
+        bottom: 150px;
+        right: 15px;
+        transform: scale(1.45);
+    }
+}
+
+@media screen and (min-width: 625px) {
+    #chamaChat {
+        position: fixed;
+        float: right;
+        background: transparent;
+        bottom: 130px;
+        right: 15px;
+        transform: scale(1.45);
+    }
+}
