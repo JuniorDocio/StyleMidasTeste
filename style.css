@@ -1,41 +1,52 @@
 /*Escreva aqui a sua estilização*/
+
+/*Adição de um fundo em degrade*/
 #lias_133{
     background-image: linear-gradient(#A52A2A,#1C1C1C);
 }
 #lias_134{
     background:#1C1C1C;
 }
-.btn-site,#lias_132,.carousel-control,.btn-comprar,.destaque-tarja-top,.lias_291 .indices-table th{
+/*Mudança da cor de alguns backgrounds*/
+.btn-site,#lias_132,.lias_137 .destaque .carousel-control,.lias_291 .carousel-control,.btn-comprar,.destaque-tarja-top,.lias_291 .indices-table th{
     background:#A52A2A !important;
 }
+/*Mudança no backgroud e ajuste de opacidade do seletor venda*/
 .seletor-venda,.nav-tabs>li>a{
     background:rgba(165,42,42,0.5) !important;  
 }
+/*Mudança da cor da tarja de destaque*/
 .destaque-tarja-top:after{
     border-top: 10px solid #000000 !important;
 }
 
+/*Mudança da cor de bakcground e da borda*/
 .btn-detalhes,#tipoImovelLivre{
     background:#A52A2A !important;
     border: 1px solid #A52A2A !important;
 }
-
+/*Mudança da cor da borda*/
 .nav-tabs+.tab-content{
     border: 1px solid #000000 !important;
 }
-
+/*Mudança na cor das letras*/
 .destaque-transacao span,.destaque-emp-tipo,.valor-transacao,.widget-title span,li::marker,.tel_whatsapp{
     color: #A52A2A !important;
 }
+/*Mudança na cor das letras*/
 #lias_132 .form-newsletter input[type="submit"], .lias_132 .form-newsletter input[type="submit"]{
     color: #A52A2A !important;
 }
+/*Mudança na cor de backgroud*/
 .nav-tabs+.tab-content,.header-3 .menu-navigation .nav.navbar-nav{
     background: #00000082;
 }
+/*Mudança na cor das letras do menu de navegação*/
 .header-3 .menu-navigation .nav.navbar-nav>li>a{
+   
     color: #ffffff !important;
 }
+/*Mudança na cor de backgroud e alteração na opacidade*/
 .header-3 .header-logo span{
     background: rgb(0 0 0 / 50%);
 }
